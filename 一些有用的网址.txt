@@ -1,0 +1,42 @@
+玩游戏 学Vim http://vim-adventures.com/
+git指令大全 http://itmyhome.com/git-sheet/
+
+
+学习网站  http://www.runoob.com/web/web-buildingprimer.html
+
+
+github学习及拓展 http://www.uisdc.com/the-designer-github-tutorial
+
+代码托管 coding.net
+
+
+http://www.mirrorservice.org 网站的镜像 可以下载很多文件 开发工具
+
+
+
+.net源码网址
+ https://referencesource.microsoft.com/#q=Stream
+
+
+前端框架前100
+https://www.awesomes.cn/repo/angular/angular-js
+
+subline text生成html的快捷键
+https://docs.emmet.io/cheat-sheet/
+
+
+ASP.NET WEB配置指南
+https://msdn.microsoft.com/zh-cn/library/ff400235(VS.100).aspx
+
+
+链接：http://pan.baidu.com/s/1i4LKd6X 
+密码：cshx
+
+源码网址（微信小程序）
+http://www.see-source.com//weixinwidget/list.html?p=6
+
+
+微软的网站
+https://docs.microsoft.com/zh-cn/
+
+

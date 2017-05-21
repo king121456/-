@@ -1,0 +1,1 @@
+="select s.Code,s.Name,d.TreeName from Base_Staff s left join dbo.Base_Department d on s.DeptId=d.Id where s.Code='"&C2&"' union"

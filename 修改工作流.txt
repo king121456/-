@@ -1,0 +1,14 @@
+SELECT d.Id,d.TreeName,
+sum(CASE WHEN I.InvoiceStatus in (20,30,60,70) then i.InvoiceMoney else 0 end )MakeInvoiceMoney,
+count(CASE WHEN I.InvoiceStatus in (20,30,60,70) then 1 else 0 end ) MakeInvoiceStatus,
+sum(CASE WHEN I.InvoiceStatus in (40) then i.InvoiceMoney else 0 end )RefundInvoiceMoney,
+sum(CASE WHEN I.InvoiceStatus in (40) then 1 else 0 end ) RefundInvoiceStatus,
+sum(CASE WHEN I.InvoiceStatus in (50) then i.InvoiceMoney else 0 end )CancelInvoiceMoney,
+sum(CASE WHEN I.InvoiceStatus in (50) then 1 else 0 end ) CancelInvoiceStatus
+FROM FI_Invoice i inner join FI_InvoiceBatch ib on ib.Id=i.InvoiceBatchId
+inner join Base_Department d on d.Id=ib.DeptId
+where {ib.ApprovedOn>=@beginDate} and {ib.ApprovedOn<=@endDate} 
+group by d.Id,d.TreeName
+
+
+update dbo.T_FF_DF_WORKFLOWDEF  set process_content = REPLACE(process_content, '?<?xml', '<?xml');

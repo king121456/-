@@ -1,0 +1,18 @@
+查询某个表有多少列 
+select * from syscolumns where id=object_id('表名') 
+
+查询某个表中各字段的类型
+select a.name,b.name,* from syscolumns a left join systypes b 
+on a.xtype=b.xtype
+where a.id=object_id('OA_staff') 
+
+获取主键字段
+
+6.获取主键字段
+select  name FROM SysColumns WHERE id=Object_Id('表名') and 
+colid=(select top 1 keyno from sysindexkeys where id=Object_Id('表名'))
+
+sql查询表时按查询字段的顺序列出字段
+SELECT * from SysColumns 
+WHERE id=Object_Id('hr_staff') and name not like '%flex%'
+order by colorder

@@ -1,0 +1,2 @@
+select * from Sys_FormCaseDefine
+有自定义菜单会导致自己写的xml无效

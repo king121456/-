@@ -1,0 +1,9 @@
+:after选择器:在被选元素内容后面插入内容
+:before选择器：在被选元素内容之前插入内容
+使用content来指定插入的内容
+兼容性还不错
+
+
+-webkit-box-sizing:box-border;该属性说明任何填充都不更改盒子大小
+
+clear:both清除浮动

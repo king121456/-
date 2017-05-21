@@ -1,0 +1,4 @@
+实现IHttpHandler接口的类型具有处理客户请求的能力
+Context用于获取上下文
+对于get方式，服务器端用Request.QueryString获取变量的值
+对于post方式，服务器端用Request.Form获取提交的数据

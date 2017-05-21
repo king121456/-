@@ -1,0 +1,6 @@
+ึ์ดบา๘ 17:36:24
+      <table name="Base_MaxSerialNumber" alias="m"
+             uabfsinglrom="Base_MaxSerialNumber m inner join Base_CodeRule c on m.CodeRuleId=c.Id inner join Sys_MDClassMap mc on c.EntityTypeId=mc.Id"
+             where="mc.Code in('User','Staff','Department')">
+      </table>
+

@@ -1,0 +1,13 @@
+listAddress.GroupBy(t => t.Province)
+
+                    .Select(g => new
+
+                    {
+
+                        Province= g.Sum(t => t.Province),
+
+                        ProName = g.Sum(t => t.ProName),
+
+                        OrderIndex = g.Sum(t => t.ProjectNum)
+
+                    });

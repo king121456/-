@@ -1,0 +1,19 @@
+博客服务接口： http://wcf.open.cnblogs.com/blog/help
+
+
+新闻服务接口： http://wcf.open.cnblogs.com/news/help
+
+http://wcf.open.cnblogs.com/blog/
+
+
+Uri	Method	Description
+48HoursTopViewPosts/{itemCount}	GET	48小时阅读排行
+bloggers/recommend/{pageIndex}/{pageSize}	GET	分页获取推荐博客列表
+bloggers/recommend/count	GET	获取推荐博客总数
+bloggers/search	GET	根据作者名搜索博主
+post/{postId}/comments/{pageIndex}/{pageSize}	GET	获取文章评论
+post/body/{postId}	GET	获取文章内容
+sitehome/paged/{pageIndex}/{pageSize}	GET	分页获取首页文章列表
+sitehome/recent/{itemcount}	GET	获取首页文章列表
+TenDaysTopDiggPosts/{itemCount}	GET	10天内推荐排行
+u/{blogapp}/posts/{pageIndex}/{pageSize}	GET	分页获取个人博客文章列表
