@@ -102,9 +102,11 @@ git remote -v
 
 19.分支管理
 查看分支 git branch 这条命令会列出所有分支，当前分支会有*号标示
-创建分支 git branch 分支名
+创建分支 git branch+分支名
 检出分支 git checkout 分支名 用于各个分支间切换
+git checkout -b dev 创建dev分支并切换到dev分支
 git fetch origin master 从远程origin仓库的master分支下载到本地的origin master
+git fetch origin master:temp 复制并创建分支
 git log -p master.. origin/master 比较本地的仓库和远程参考的区别
 git merge origin/master  远程下载下来的代码合并到本地仓库，远程的和本地的合并
 it fetch origin master:temp 从远程的origin仓库的master分支下载到本地并新建一个分支temp
@@ -113,8 +115,12 @@ git merge temp 合并temp分支到master
 git branch -d temp 删除分支
 
 
+有冲突时，强制push  git push -u origin master -f 
 
 
+git pull origin master
+
+git merge 把一个分支
 
 
 
